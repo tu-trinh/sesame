@@ -2,27 +2,39 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- Font Awesome -->
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css"
+      rel="stylesheet"
     />
 
     <div class="wholeP">
+      <div class="promo">
+        <p>10% OFF WITH THE CODE "NFTFIRST"</p>
+      </div>
       <div class="navB">
         <div id="aicon">
-          <img src="assets/Sesame - Logo.png" alt="Sesame." id="iconfont">
+          <img src="assets/Sesame - Symbol Logo.png" alt="Sesame." id="iconfont">
         </div>
         <nav class="navbar navbar-expand-lg navbar-light" id="topbar">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
 
-              <li class="nav-item active">
+              <!-- <li class="nav-item active">
                 <a class="nav-link" href="index.html"
                   >Home<span class="sr-only">(current)</span></a
                 >
-              </li>
+              </li> -->
 
               <li class="nav-item active">
                 <a class="nav-link" href="events.html"
@@ -35,17 +47,65 @@
                   >Wallet<span class="sr-only">(current)</span></a
                 >
               </li>
+
+              <li class="nav-item active">
+                <a class="nav-link" href="shoppingCart.html"
+                  >Cart<span class="sr-only">(current)</span></a
+                >
+              </li>
             </ul>
           </div>
         </nav>
       </div>
 
       <div id="pageContent">
-        <div id="infoContent">
-          home page place holder
+        <div id="intro">
+          <img src="assets/Sesame - Logo.png" id="sesameLogo" class="innerIntro">
+          <p class="innerIntro">Remember your favorite events longer.</p>
+          <div class="input-group rounded innerIntro" id="searchBar">
+            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            <span class="input-group-text border-0" id="search-addon">
+              <i class="fas fa-search" onclick="search"></i>
+            </span>
+          </div>
+          <div id="introCards">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="about">
+          <div id="aboutContent">
+            <h3>Holds on your tickets in your all-in-one wallet</h3><br>
+            <p>All your tickets in one place, even those you did not buy on the platform; we process it for you.</p>
+            <p>Through a QR code, it makes it easy to access your favorite events seamlessly.</p>
+            <div class="placeholder"></div>
+          </div>
+        </div>
+        <div id="details">
+          <div class="placeholder"></div>
+        </div>
+        <div class='btmContainer'>
+          <div class="placeholder"></div>
         </div>
       </div>
-        <div class='btmContainer'></div>
     </div>
     <script src="js/script.js"></script>
   </body>

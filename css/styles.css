@@ -18,9 +18,24 @@ body {
   flex-wrap: wrap;
   position: relative;
   opacity: 1;
-  overflow: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
-  background-color: #ba8af136;
+  /* background-color: #ba8af136; */
+}
+
+.promo {
+  position: fixed;
+  display: flex;
+  top: 0%;
+  padding-top: 15px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  height: 45px;
+  background-color: #442897;
+  z-index: 99;
 }
 
 .nav-link {
@@ -34,18 +49,40 @@ body {
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #7126c7 !important;
+  color: #5131c4 !important;
   opacity: 1;
 }
 
 .navB {
-  position: fixed;
-  top: 3%;
-  width: 80%;
-  left: 10%;
-  z-index: 999;
+  margin-top: 45px;
+  align-self: flex-start;
+  width: 100%;
   box-sizing: border-box;
-  box-shadow: 10px 10px 5px #8ea0a3;
+}
+
+.innerIntro {
+  max-width: 35%;
+  margin-left: 35%;
+  display: block;
+  align-self: center;
+  font-size: 20px;
+}
+
+.card {
+  margin: 15px;
+}
+
+.placeholder {
+  height: 200px;
+}
+
+.btmContainer {
+  display: block;
+  width: 90%;
+  padding: 1%;
+  align-self: center;
+  transition-timing-function: ease;
+  transition: 0.3s;
 }
 
 #aicon {
@@ -57,18 +94,18 @@ body {
   justify-content: center;
   align-items: center;
   opacity: 1;
-  z-index: 999;
+  z-index: 9;
 }
 
 #iconfont {
   display: inline-block;
   position: absolute;
-  width: 145px;
-  height: 45px;
-  left: 20px;
-  top: 35px;
+  width: 200px;
+  height:200px;
+  margin-left: -100px;
+  margin-top: -50px;
   font-size: 30px;
-  color: black;
+  color: #0A080A;
   text-align: center;
   font-weight: bold;
 }
@@ -82,7 +119,7 @@ body {
 }
 
 #navbarSupportedContent {
-  margin-left: 60%;
+  margin-left: 75%;
 }
 
 #pageContent {
@@ -90,24 +127,66 @@ body {
   display: inline-flex;
   flex-direction: column;
   flex-flow: column;
-  --gap: 80px;
+  --gap: 30px;
   top: 160px;
   padding: 0;
   margin: 0;
   border: 0;
   width: 100%;
-  height: calc(2200 + var(--gap));
+  overflow-y: scroll;
+  margin-top: var(--gap);
   align-items: space-between;
   justify-content: center;
 }
-#pageContent > * {
-  margin-top: var(--gap);
+
+#intro {
+  display: block;
+  width: 90%;
+  padding: 1%;
+  align-self: center;
+  justify-content: center;
+  transition-timing-function: ease;
+  transition: 0.3s;
 }
 
-#infoContent {
+#sesameLogo {
+  width: 30%;
+  justify-self: center;
+  align-self: center;
+}
+
+#searchBar {
+  margin: 10px auto 30px 35%;
+}
+
+#introCards {
+  width: 100%;
+  margin: 20px;
   display: flex;
-  order: 1;
-  flex-grow: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#about {
+  display: block;
+  width: 100%;
+  padding: 1%;
+  align-self: center;
+  transition-timing-function: ease;
+  transition: 0.3s;
+  color: white;
+  background-color: #442897;
+}
+
+#aboutContent {
+  width: 70%;
+  margin-left: 15%;
+  padding: 20px;
+}
+
+#details {
+  display: block;
   width: 90%;
   padding: 1%;
   align-self: center;
