@@ -1,0 +1,116 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wholeP {
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  opacity: 1;
+  overflow: auto;
+  overflow-x: hidden;
+  background-color: #ba8af136;
+}
+
+.nav-link {
+  font-family: "Gill Sans", sans-serif;
+  font-size: 1.6vw;
+  color: #8a7799 !important;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  margin: 8px;
+  cursor: pointer;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: #7126c7 !important;
+  opacity: 1;
+}
+
+.navB {
+  position: fixed;
+  top: 3%;
+  width: 80%;
+  left: 10%;
+  z-index: 999;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 5px #8ea0a3;
+}
+
+#aicon {
+  position: absolute;
+  width: 220px;
+  height: 120px;
+  left: 5%;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  z-index: 999;
+}
+
+#iconfont {
+  display: inline-block;
+  position: absolute;
+  width: 145px;
+  height: 45px;
+  left: 20px;
+  top: 35px;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+#topbar {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 120px;
+  transition-timing-function: ease;
+  transition: 0.3s;
+}
+
+#navbarSupportedContent {
+  margin-left: 60%;
+}
+
+#pageContent {
+  position: absolute;
+  display: inline-flex;
+  flex-direction: column;
+  flex-flow: column;
+  --gap: 80px;
+  top: 160px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  height: calc(2200 + var(--gap));
+  align-items: space-between;
+  justify-content: center;
+}
+#pageContent > * {
+  margin-top: var(--gap);
+}
+
+#infoContent {
+  display: flex;
+  order: 1;
+  flex-grow: 1;
+  width: 90%;
+  padding: 1%;
+  align-self: center;
+  transition-timing-function: ease;
+  transition: 0.3s;
+}
