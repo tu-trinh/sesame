@@ -159,7 +159,7 @@ body {
   margin: 10px auto 30px 35%;
 }
 
-#introCards {
+#introCards, #outroCards {
   width: 100%;
   margin: 20px;
   display: flex;
@@ -168,7 +168,7 @@ body {
   justify-content: center;
 }
 
-#about {
+#about, #outro {
   display: block;
   width: 100%;
   padding: 1%;
@@ -179,7 +179,7 @@ body {
   background-color: #442897;
 }
 
-#aboutContent {
+#aboutContent, #outroContent {
   width: 70%;
   margin-left: 15%;
   padding: 20px;
