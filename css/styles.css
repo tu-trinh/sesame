@@ -85,6 +85,16 @@ body {
   transition: 0.3s;
 }
 
+.btn {
+  display: flex;
+  color: white !important;
+  background-color: #442897 !important;
+}
+
+.card-img-top {
+  height: 60% !important;
+}
+
 #aicon {
   position: absolute;
   width: 220px;
@@ -192,4 +202,36 @@ body {
   align-self: center;
   transition-timing-function: ease;
   transition: 0.3s;
+}
+
+#events {
+  display: block;
+  padding: 5%;
+  margin-top: -2%;
+  transition-timing-function: ease;
+  transition: 0.3s;
+}
+
+#eventCards {
+  width: 100%;
+  margin: 20px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#eventHeadline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#walletCtn {
+  width: 100%;
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
