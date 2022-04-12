@@ -9,4 +9,14 @@ function goHome() {
 function search() {
     // pass
 }
-     
+
+function openQRCode() {
+    var qrcode = document.getElementById("qrCode")
+    if (qrcode.style.display === "none") {
+        qrcode.style.display = "block";
+    } else {
+        qrcode.style.display = "none";
+    }
+    var qrCodeCard = document.getElementById("qrCodeCard")
+    qrCodeCard.style.height = "30rem";
+}

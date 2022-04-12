@@ -53,6 +53,14 @@ body {
   opacity: 1;
 }
 
+.enter-event {
+  color: #4F4F4F;
+}
+.enter-event:hover, .enter-event:focus {
+  color: #5131c4 !important;
+  opacity: 1;
+}
+
 .navB {
   margin-top: 45px;
   align-self: flex-start;
@@ -234,4 +242,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#qrCode {
+  display: none;
 }

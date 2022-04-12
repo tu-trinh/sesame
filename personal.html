@@ -59,12 +59,38 @@
       </div>
 
       <div id="pageContent">
-        <div id="walletCtn">
+        <div id="events">
+          <div id="eventHeadline">
+            <h2>Your Events</h2>
+          </div>
+          
+          <div id="eventCards">
+            <div class="card" id = "qrCodeCard" style="width: 18rem; height: 10rem;">
+              <!-- <img class="card-img-top" src="./assets/Logo_Roland-Garros.jpeg" alt="Card image cap"> -->
+              <div class="card-body">
+                <div class="card-text">
+                  <h5>French Open</h5>
+                  <p>Men's Singles Day 1</p>
+                </div>
+                <button type="button" class="btn" onclick="openQRCode()">Open QR code</button>
+                <div id = "qrCode">
+                  <br>
+                  <br>
+                  <img src = "./assets/qr-code.png" width = "200" height = "200">
+                  <br>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div id="walletCtn">
           <svg xmlns="http://www.w3.org/2000/svg" width="25%" height="15%" fill="#442897" class="bi bi-cash-stack" viewBox="0 0 16 16">
             <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
             <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z"/>
           </svg>
-        </div>
+        </div> -->
         <div class='btmContainer'></div>
       </div>
     </div>
