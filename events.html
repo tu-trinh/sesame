@@ -17,19 +17,31 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css"
       rel="stylesheet"
     />
+    <script
+      src="/node_modules/@arkane-network/web3-arkane-provider/dist/web3-arkane-provider.js"
+    >
+            Arkane.createArkaneProviderEngine({clientId: 'Arketype'}).then(provider => {
+          web3 = new Web3(provider);
+      });
+    </script>
+  </head>
 
+  <body>
     <div class="wholeP">
       <div class="promo">
         <p>10% OFF WITH THE CODE "NFTFIRST"</p>
       </div>
       <div class="navB">
         <div id="aicon">
-          <img src="assets/Sesame - Symbol Logo.png" alt="Sesame." id="iconfont">
+          <img
+            src="assets/Sesame - Symbol Logo.png"
+            alt="Sesame."
+            id="iconfont"
+          />
         </div>
         <nav class="navbar navbar-expand-lg navbar-light" id="topbar">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-
               <!-- <li class="nav-item active">
                 <a class="nav-link" href="index.html"
                   >Home<span class="sr-only">(current)</span></a
@@ -47,7 +59,7 @@
                   >Wallet<span class="sr-only">(current)</span></a
                 >
               </li>
-<!-- 
+              <!-- 
               <li class="nav-item active">
                 <a class="nav-link" href="shoppingCart.html"
                   >Cart<span class="sr-only">(current)</span></a
@@ -64,22 +76,32 @@
             <h2>Featured Events</h2>
             <button type="button" class="btn">Create an Event</button>
           </div>
-          
+
           <div id="eventCards">
-            <div class="card" style="width: 18rem; height: 22rem;">
-              <img class="card-img-top" src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" alt="Card image cap">
+            <div class="card" style="width: 18rem; height: 22rem">
+              <img
+                class="card-img-top"
+                src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"
+                alt="Card image cap"
+              />
               <div class="card-body">
-                <a class = "enter-event" href = "buyTicket.html">
+                <a class="enter-event" href="buyTicket.html">
                   <div class="card-text">
                     <h5>MAZE Livehouse</h5>
-                    <p>Come join us for a live jazz performance and wine tasting!</p>
+                    <p>
+                      Come join us for a live jazz performance and wine tasting!
+                    </p>
                   </div>
                 </a>
               </div>
             </div>
 
-            <div class="card" style="width: 18rem; height: 22rem; opacity: 0.5;">
-              <img class="card-img-top" src="https://media.istockphoto.com/photos/and-a-concept-yellow-question-mark-glowing-amid-black-question-marks-picture-id1305169776?b=1&k=20&m=1305169776&s=170667a&w=0&h=mpYdh2MzGN_rqxoRNlO5KWGCCq3ZktzSfp-wA0nD9no=" alt="Card image cap">
+            <div class="card" style="width: 18rem; height: 22rem; opacity: 0.5">
+              <img
+                class="card-img-top"
+                src="https://media.istockphoto.com/photos/and-a-concept-yellow-question-mark-glowing-amid-black-question-marks-picture-id1305169776?b=1&k=20&m=1305169776&s=170667a&w=0&h=mpYdh2MzGN_rqxoRNlO5KWGCCq3ZktzSfp-wA0nD9no="
+                alt="Card image cap"
+              />
               <div class="card-body">
                 <div class="card-text">
                   <h5>TBD...</h5>
@@ -89,8 +111,8 @@
             </div>
           </div>
         </div>
-        
-        <div class='btmContainer'></div>
+
+        <div class="btmContainer"></div>
       </div>
     </div>
     <script src="js/script.js"></script>

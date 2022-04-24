@@ -81,7 +81,7 @@ body {
 }
 
 .placeholder {
-  height: 200px;
+  height: 250px;
 }
 
 .btmContainer {
@@ -107,7 +107,7 @@ body {
   position: absolute;
   width: 220px;
   height: 120px;
-  left: 5%;
+  left: 6%;
   padding: 5px;
   justify-content: center;
   align-items: center;
@@ -137,7 +137,7 @@ body {
 }
 
 #navbarSupportedContent {
-  margin-left: 75%;
+  margin-left: 80%;
 }
 
 #pageContent {
@@ -177,20 +177,26 @@ body {
   margin: 10px auto 30px 35%;
 }
 
-#introCards, #outroCards {
+#introCards, #details, #outroCards {
   width: 100%;
   margin: 20px;
+  padding: 1%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  transition-timing-function: ease;
+  transition: 0.3s;
 }
 
 #about, #outro {
-  display: block;
+  display: flex;
+  flex-direction: row;
   width: 100%;
+  margin: 0px;
   padding: 1%;
-  align-self: center;
+  align-items: center;
+  justify-content: center;
   transition-timing-function: ease;
   transition: 0.3s;
   color: white;
@@ -199,17 +205,28 @@ body {
 
 #aboutContent, #outroContent {
   width: 70%;
-  margin-left: 15%;
+  margin-left: 10%;
+  text-align: left;
   padding: 20px;
 }
 
-#details {
-  display: block;
-  width: 90%;
-  padding: 1%;
-  align-self: center;
-  transition-timing-function: ease;
-  transition: 0.3s;
+#qrcode {
+  margin: 5% 5% 5% -10%;
+  width: 200px;
+  height: 200px;
+}
+
+#detailsContent {
+  width: 70%;
+  margin-right: 20%;
+  text-align: right;
+  padding: 20px;
+}
+
+#blockchain-icon {
+  margin-left: 15%;
+  width: 200px;
+  height: 200px;
 }
 
 #events {
