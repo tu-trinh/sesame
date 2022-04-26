@@ -18,14 +18,14 @@
       rel="stylesheet"
     />
     <script
-    src="/node_modules/@arkane-network/web3-arkane-provider/dist/web3-arkane-provider.js"
-  >
-          Arkane.createArkaneProviderEngine({clientId: 'Arketype'}).then(provider => {
-        web3 = new Web3(provider);
-    });
-  </script>
+      src="/node_modules/@arkane-network/web3-arkane-provider/dist/web3-arkane-provider.js"
+    >
+      Arkane.createArkaneProviderEngine({clientId: 'testnwac'}).then(provider => {
+      web3 = new Web3(provider);
+      });
+    </script>
   </head>
-  
+
   <body>
     <div class="wholeP">
       <div class="promo">
@@ -33,12 +33,15 @@
       </div>
       <div class="navB">
         <div id="aicon">
-          <img src="assets/Sesame - Symbol Logo.png" alt="Sesame." id="iconfont">
+          <img
+            src="assets/Sesame - Symbol Logo.png"
+            alt="Sesame."
+            id="iconfont"
+          />
         </div>
         <nav class="navbar navbar-expand-lg navbar-light" id="topbar">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-
               <!-- <li class="nav-item active">
                 <a class="nav-link" href="index.html"
                   >Home<span class="sr-only">(current)</span></a
@@ -72,22 +75,28 @@
           <div id="eventHeadline">
             <h2>Your Events</h2>
           </div>
-          
+
           <div id="eventCards">
-            <div class="card" id = "qrCodeCard" style="width: 18rem; height: 10rem;">
+            <div
+              class="card"
+              id="qrCodeCard"
+              style="width: 18rem; height: 10rem"
+            >
               <!-- <img class="card-img-top" src="./assets/Logo_Roland-Garros.jpeg" alt="Card image cap"> -->
               <div class="card-body">
                 <div class="card-text">
                   <h5>French Open</h5>
                   <p>Men's Singles Day 1</p>
                 </div>
-                <button type="button" class="btn" onclick="openQRCode()">Open QR code</button>
-                <div id = "qrCode">
-                  <br>
-                  <br>
-                  <img src = "./assets/qr-code.png" width = "200" height = "200">
-                  <br>
-                  <br>
+                <button type="button" class="btn" onclick="openQRCode()">
+                  Open QR code
+                </button>
+                <div id="qrCode">
+                  <br />
+                  <br />
+                  <img src="./assets/qr-code.png" width="200" height="200" />
+                  <br />
+                  <br />
                 </div>
               </div>
             </div>
@@ -100,7 +109,7 @@
             <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z"/>
           </svg>
         </div> -->
-        <div class='btmContainer'></div>
+        <div class="btmContainer"></div>
       </div>
     </div>
     <script src="js/script.js"></script>

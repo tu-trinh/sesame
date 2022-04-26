@@ -20,7 +20,3 @@ function openQRCode() {
     var qrCodeCard = document.getElementById("qrCodeCard")
     qrCodeCard.style.height = "30rem";
 }
-
-// Arkane.createArkaneProviderEngine({clientId: 'Arketype'}).then(provider => {
-//     web3 = new Web3(provider);
-// });
