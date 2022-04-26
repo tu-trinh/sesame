@@ -20,7 +20,7 @@
     <script
       src="/node_modules/@arkane-network/web3-arkane-provider/dist/web3-arkane-provider.js"
     >
-      Arkane.createArkaneProviderEngine({clientId: 'testnwac'}).then(provider => {
+      Arkane.createArkaneProviderEngine({clientId: 'testnwac', environment: 'local'}).then(provider => {
       web3 = new Web3(provider);
       });
     </script>
