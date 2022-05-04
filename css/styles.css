@@ -114,6 +114,14 @@ body {
   background-color: #442897 !important;
 }
 
+.events {
+  display: block;
+  padding: 5%;
+  margin-top: -2%;
+  transition-timing-function: ease;
+  transition: 0.3s;
+}
+
 #aicon {
   position: absolute;
   width: 220px;
@@ -239,10 +247,16 @@ body {
   padding: 20px;
 }
 
-#qrcode {
-  margin: 5% 5% 5% -10%;
+#qrCode {
+  margin: 5%;
   width: 200px;
   height: 200px;
+  display: none;
+}
+
+#qrCodeCard {
+  width: 18rem; 
+  height: 10rem;
 }
 
 #detailsContent {
@@ -256,14 +270,6 @@ body {
   margin-left: 15%;
   width: 200px;
   height: 200px;
-}
-
-#events {
-  display: block;
-  padding: 5%;
-  margin-top: -2%;
-  transition-timing-function: ease;
-  transition: 0.3s;
 }
 
 #eventCards {
@@ -288,10 +294,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#qrCode {
-  display: none;
 }
 
 #connectBtn {
