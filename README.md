@@ -26,7 +26,7 @@ Finally, we chose to use Web3 technologies for this ticketing problem due to the
     As a multi-pages website, the users can navigate themselves to different pages (built in different HTML files) through clicking on different tabs at the navigation bar on top. Clicking on the top-left logo will direct one back to the landing page.
 
 - Back-end:
-    The back-end of the website is developed in Python. We used Python for deploying the smart contract. The code of the contract is contained in token -> contracts -> Ticket.sol, and the deployment code is in token -> scripts -> token.py.
+    The back-end of the website is developed in Python. We used Python for deploying the smart contract. The code of the contract is contained in token -> contracts -> Ticket.sol, and the deployment code is in token -> scripts -> deploy-token.js.
     
 - Chain:
     Our platform is built on the Polygon chain. We used Solidity in writing the smart contract terms of our platform. Using a free trial we initialized a chain endpoint using QuickNode. Other libraries used include Hardhat for the development environment and OpenZeppelin for contract creation.
