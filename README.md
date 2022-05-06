@@ -1,7 +1,7 @@
 # Sesame
 
 ## Features and Capabilities
-Our website is a market place for event organizers/artists to mint and sell NFT tickets, as well as for general users to browse for events and purchase tickets. The current version is an MVP and only supports the most fundamental features.
+Our website is a market place for event organizers/artists to mint and sell NFT tickets, as well as for general users to browse for events and purchase tickets. The current version is an MVP and only supports the most fundamental features: deployment of ticket contract, connecting to blockchain wallet, and a prototype of our final front-end.
 
 We currently have three pages, respectively the landing page, the event page, and the ticket wallet page.
 - Landing page: contains information about our website and services
