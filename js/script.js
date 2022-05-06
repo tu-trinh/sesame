@@ -3,6 +3,7 @@
 let body = document.body;
 let aicon = document.getElementById('aicon');
 let connectBtn = document.querySelector('#connectBtn');
+let buyTicketBtn = documetn.querySelector('#buyTicketBtn');
 let qrcode = document.getElementById('qrCode');
 let qrCodeCard = document.getElementById('qrCodeCard');
 let availTkts = document.getElementById('availTkts');
@@ -10,6 +11,7 @@ let pastTkts = document.getElementById('pastTkts');
 
 aicon.addEventListener('click', goHome);
 connectBtn.addEventListener('click', openWallet);
+buyTicketBtn.addEventListener('click', buyTicket);
 
 function goHome() {
     window.location.href = "index.html";
@@ -69,3 +71,19 @@ async function openWallet() {
 //     await transaction.wait();
 //     // console.log("Transaction Hash: ", transaction.hash);
 // }
+
+
+function buyTicket() {
+    const hre = require("hardhat");
+    const WALLET_ADDRESS = "0x6272b09bEa2912FA6d0460343Bf0D308FCFb0ff8"
+    const CONTRACT_ADDRESS = "0xe7767f1f3d7bafdd98d4a7fc97e53c37e239d747"
+    async function main(_URI) {
+        const NFT = await hre.ethers.getContractFactory("MyToken");
+        const contract = NFT.attach(CONTRACT_ADDRESS);
+        await contract._safeMint(WALLET_ADDRESS).then((txn) => {
+            // Log Txn
+            console.log(txn.hash)
+            return(txn)
+        });
+    }
+}
