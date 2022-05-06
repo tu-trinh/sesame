@@ -6,6 +6,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
+// Define an NFT ticket for minting. //
 contract Ticket is ERC721, ERC721Enumerable, Ownable {
     using Counters for Counters.Counter;
 

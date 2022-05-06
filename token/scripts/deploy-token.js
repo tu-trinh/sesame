@@ -1,3 +1,4 @@
+/** Script to deploy ticket contract. **/
 const hre = require("hardhat")
 
 async function main() {
