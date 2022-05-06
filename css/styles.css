@@ -122,6 +122,17 @@ body {
   transition: 0.3s;
 }
 
+.eventDetails {
+  padding: 5%;
+}
+
+.d-block {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 15% 65%;
+}
+
 #aicon {
   position: absolute;
   width: 220px;
@@ -319,4 +330,8 @@ body {
   top: 20%;
   align-items: center;
   justify-content: center;
+}
+
+#carouselExampleControls {
+  position: static;
 }
